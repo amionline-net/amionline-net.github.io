@@ -1,5 +1,45 @@
-<html>
-  <body>
-    <h1>hi</h1>
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <title>Am I Online?</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body class="h-100">
+    
+
+    <div class="container h-100">
+		<div class="row h-75">
+		    <div class="col align-self-center text-center">
+				<h1 class="display-1">Yup.</h1>
+				<h4>You are online.</h4>
+		    </div>
+    	</div>
+    	<div class="row h-25">
+		    <div class="col align-self-center text-center">
+				<a tabindex="0" class="btn btn-sm btn-link" role="button" data-toggle="popover" data-bs-trigger="focus" data-bs-placement="auto" title="About" data-bs-content="Sometimes while using paid WiFi you are required to land on any page to get to the payment website. The problem is that you can not load secured website (i.e. using the HTTPS protocol) and it became somewhat challenging to find a unsercured website in 2017. This website will never redirect you to HTTPS version of itself, feel free to use it to make sure you are online or to land on the paid WiFi sign in page.  <br><br> Made by <a href='https://github.com/artkay'>Art Kay</a> on a flight from New York to Las Vegas (AWS re:Invent 2017 is waiting!).<br><br><i>Delta #424,<br>November 27th, 2017.<br></i>">What is this?</a>
+		    </div>
+    	</div>
+	</div>
+
+    <script src="js/jquery-3.6.3.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    	$(function () {
+  			$('[data-toggle="popover"]').popover({'html': true})
+		})
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110316702-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-110316702-1');
+	</script>
   </body>
 </html>
